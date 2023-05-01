@@ -5,18 +5,23 @@ import "./Header.css";
 
 function Header() {
 
-  const [Menu,setMenu ] = useState("Header-res");
+  const [Menu,setMenu ] = useState("Header-resp");
   const [Li,setLi] = useState("display-hide")
+  const [Icon,setIcon] = useState("fa-sharp fa-solid fa-bars")
   
 let myfunc = () =>{
-    if(Menu === "Header-res")
+    if(Menu === "Header-resp")
     {
-      setMenu("");
+      setMenu("Header-res");
       setLi("")
+      setIcon("fa-sharp fa-solid fa-circle-xmark")
+
+      
     }
     else{
-      setMenu("Header-res")
-      setLi("display-show")
+      setMenu("Header-resp")
+      setLi("display-hide")
+      setIcon("fa-sharp fa-solid fa-bars")
     }
 
 }
@@ -25,7 +30,7 @@ let myfunc = () =>{
     <div className="head-div" id="nav">
       <div className="Header">
         <div>LOGO</div>
-        <ul className={Li}>
+        <ul >
           <li>
             <a href="/" className="item1">
               Home
@@ -54,12 +59,12 @@ let myfunc = () =>{
             </a>
           </li>
           <li>
-          <a href="javascript:void(0)" className="icon" onClick={myfunc}><i class="fa-sharp fa-solid fa-bars"></i></a>
+          <a href="javascript:void(0)" className="icon" onClick={myfunc}><i class={Icon}></i></a>
           </li>
         </ul>
       </div>
       <div className={Menu}>
-      <ul>
+      <ul className={Li}>
           <li>
             <a href="/" className="item1">
               Home
