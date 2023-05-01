@@ -35,11 +35,18 @@
     border-radius: 2px;  
     box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 0px 2px, rgba(214, 97, 223, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
-
 .Header .icon{
     display: none;
 }
-
+.Header-res{
+    display: none;
+}
+.display-hide{
+    display: none;
+}
+.display-show{
+    display: block;
+}
 @media screen and (max-width:800px){
     
     .Header ul li a{
@@ -51,25 +58,22 @@
         display: block;
         float: right;
     }
-
-    
-
-    .head-div.head-div-res{
-        color: black;
-        background-color: aqua;
-    }
-
-    .head-div.head-div-res.Header.icon{
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    .head-div.head-div-res.Header ul{
-        float: none;
+    .Header-res{
         display: block;
-        text-align: left;
-        color: black;
+        position: absolute;
+        background: black;
+        width: 50%;
+        height: 100vh;
+        top:63px;
+        padding: 1rem 2rem;
+        right: 0px;
+    }
+    .Header-res ul li{
+        margin: 1rem 0rem;
+    }
+    .Header-res ul li a{
+        color: rgb(255, 255, 255);
+        background-color: black;
         
     }
 
