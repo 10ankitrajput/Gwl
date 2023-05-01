@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable no-script-url */
 import { useState } from "react";
 import "./Header.css";
 
@@ -8,6 +10,7 @@ function Header() {
   const [Menu,setMenu ] = useState("Header-resp");
   const [Li,setLi] = useState("display-hide")
   const [Icon,setIcon] = useState("fa-sharp fa-solid fa-bars")
+  const [Social,setSocial] = useState("display-hide");
   
 let myfunc = () =>{
     if(Menu === "Header-resp")
@@ -15,6 +18,7 @@ let myfunc = () =>{
       setMenu("Header-res");
       setLi("")
       setIcon("fa-sharp fa-solid fa-circle-xmark")
+      setSocial("Social-Media")
 
       
     }
@@ -22,12 +26,13 @@ let myfunc = () =>{
       setMenu("Header-resp")
       setLi("display-hide")
       setIcon("fa-sharp fa-solid fa-bars")
+      setSocial("display-hide")
     }
 
 }
 
   return (
-    <div className="head-div" id="nav">
+    <div className="Head-div" id="nav">
       <div className="Header">
         <div className="logo"><h2>Gwalior</h2></div>
         <ul >
@@ -50,7 +55,7 @@ let myfunc = () =>{
 
           <li>
             <a href="/" className="item4">
-              Transportation
+              Transport
             </a>
           </li>
           <li>
@@ -84,7 +89,7 @@ let myfunc = () =>{
 
           <li>
             <a href="/" className="item4">
-              Transportation
+              Transport
             </a>
           </li>
           <li>
@@ -92,6 +97,11 @@ let myfunc = () =>{
               ContactUs
             </a>
           </li>
+          </ul>
+          <ul className={Social}>
+            <li><a href="/"><i class="fa-brands fa-instagram"></i></a></li>   
+            <li><a href="/"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="/"><i class="fa-brands fa-square-twitter"></i></a></li>
           </ul>
       </div>
     </div>

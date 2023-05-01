@@ -6,19 +6,20 @@
     text-decoration: none;
     
 }
-.head-div
+.Head-div
 {
     width: 100%;
     height: 4rem;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.909);
     padding: 2rem;
     display: flex;
     justify-content:center;
     align-items: center;
     box-shadow: 0px 10px 5px gray;
+   position: fixed;
 }
 
-.head-div .Header div h2{
+.Head-div .Header div h2{
     font-size: 30px;
     color: #fd7e14;
 }
@@ -40,7 +41,6 @@
 
 .Header ul li a{
     font-size: 22px;
-    
     color: gray;
     font-weight: bold;
 }
@@ -78,12 +78,13 @@
     .Header-res{
         display: block;
         position: absolute;
-        background: black;
+        background: rgb(25, 23, 23);
         width: 50%;
         height: 100vh;
         top:63px;
         padding: 1rem 2rem;
         right: 0px;
+        box-shadow: -10px 0px 5px gray;
     }
     .Header-res ul li{
         margin: 1rem 0rem;
@@ -91,9 +92,20 @@
         
     }
     .Header-res ul li a{
-        color: rgb(255, 255, 255);
-        background-color: black;
+        color: rgb(255, 255, 255);   
+    }
+
+
+    .Header-res .Social-Media{
+        display: flex;
+        justify-items:unset
         
+    }
+    .Header-res .Social-Media li a{
+        background-color: aqua;
+        justify-content: space-between;
+        border-radius: 2px;
+        font-size: 22px;
     }
 
 
