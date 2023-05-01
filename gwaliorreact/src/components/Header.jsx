@@ -29,7 +29,7 @@ let myfunc = () =>{
   return (
     <div className="head-div" id="nav">
       <div className="Header">
-        <div>LOGO</div>
+        <div className="logo"><h2>Gwalior</h2></div>
         <ul >
           <li>
             <a href="/" className="item1">
