@@ -80,29 +80,29 @@ let myfunc = () =>{
       </div>
       <div className={Menu}>
       <ul className={Li}>
-          <li>
+          <li className="Res-li">
             <a href="/" className="item1">
               Home
             </a>
           </li>
-          <li>
+          <li className="Res-li">
             <a href="/" className="item2">
               About
             </a>
           </li>
 
-          <li>
+          <li className="Res-li">
             <a href="/" className="item4">
               Project
             </a>
           </li>
 
-          <li>
+          <li className="Res-li">
             <a href="/" className="item4">
               Transport
             </a>
           </li>
-          <li>
+          <li className="Res-li">
             <a href="/" className="item3">
               ContactUs
             </a>
