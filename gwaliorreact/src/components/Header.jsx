@@ -109,9 +109,9 @@ let myfunc = () =>{
           </li>
           </ul>
           <ul className={Social}>
-            <li><a href="/"><i class="fa-brands fa-instagram"></i></a></li>   
-            <li><a href="/"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="/"><i class="fa-brands fa-square-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>   
+            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
           </ul>
       </div>
     </div>
