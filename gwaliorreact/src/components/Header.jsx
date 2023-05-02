@@ -67,6 +67,11 @@ let myfunc = () =>{
           <a href="javascript:void(0)" className="icon" onClick={myfunc}><i class={Icon}></i></a>
           </li>
         </ul>
+        <div className="Form">
+          <a href="/"><i class="fa-solid fa-user"></i> SignIn</a>
+          <a href="/"><i class="fa-solid fa-user-plus"></i> SignUp</a>
+
+        </div>
       </div>
       <div className={Menu}>
       <ul className={Li}>

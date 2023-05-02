@@ -1,4 +1,6 @@
 .Main-div{
     padding-top: 66px;
     color: pink;
+    max-width: 1300px;
+    margin: auto;
 }
