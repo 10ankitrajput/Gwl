@@ -12,6 +12,7 @@ function Header() {
   const [Icon,setIcon] = useState("fa-sharp fa-solid fa-bars")
   const [Social,setSocial] = useState("display-hide");
   
+  
 let myfunc = () =>{
     if(Menu === "Header-resp")
     {
@@ -19,6 +20,8 @@ let myfunc = () =>{
       setLi("")
       setIcon("fa-sharp fa-solid fa-circle-xmark")
       setSocial("Social-Media")
+      
+      
 
       
     }
@@ -27,6 +30,8 @@ let myfunc = () =>{
       setLi("display-hide")
       setIcon("fa-sharp fa-solid fa-bars")
       setSocial("display-hide")
+      
+      
     }
 
 }
@@ -67,9 +72,9 @@ let myfunc = () =>{
           <a href="javascript:void(0)" className="icon" onClick={myfunc}><i class={Icon}></i></a>
           </li>
         </ul>
-        <div className="Form">
-          <a href="/"><i class="fa-solid fa-user"></i> SignIn</a>
-          <a href="/"><i class="fa-solid fa-user-plus"></i> SignUp</a>
+        <div className="User">
+          <a href="/"><i class="fa-solid fa-user"></i>&nbsp;Sign in</a>
+          <a href="/"><i class="fa-solid fa-user-plus"></i>&nbsp;Sign up</a>
 
         </div>
       </div>
