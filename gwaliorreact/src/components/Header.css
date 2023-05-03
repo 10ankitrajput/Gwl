@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Poppins:wght@300&display=swap');
+@import"https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap";
 
 * {
     margin: 0;
@@ -11,9 +11,9 @@
 
 .Head-div {
     width: 100%;
-    height: 3.5rem;
-    background-color: rgba(255, 255, 255, 0.909);
-    padding: 1rem;
+    height: 3.7rem;
+    background-color: rgba(255, 255, 255, 0.959);
+    padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,15 +67,15 @@
     display: none;
 }
 
-.display-hide {
+.Head-div .display-hide {
     display: none;
 }
 
 .Header .User {
-    width: 16%;
     display: flex;
     justify-content: space-around;
-
+    padding-right: 20px;
+    
 }
 
 .Header .User a {
@@ -83,16 +83,37 @@
     color: #454046;
     font-weight: bold;
     font-family: 'Noto Sans', sans-serif;
-    
-
 }
 
 .Header .User a i {
     color: #fd5631;
 }
 
+.Header .User .SignIn{
+    margin: 20px 8px;
+}
+
+.Header .User .SignUp{
+    background-color: #fd5631;
+    color: white;
+    margin: 10px 8px;
+    margin-right: -50px;
+    padding: 10px 8px;
+    border-radius: 20px;
+    
+    
+}
+
+.Header .User .SignUp i{
+    color: white;
+}
+
 
 @media screen and (max-width: 1400px) {
+    .Header ul{
+        margin-left: 2rem;
+    }
+
     .Header .User {
         width: 19%;
         display: flex;
@@ -127,7 +148,7 @@
     }
 
     .Header .User {
-        margin-right: -55px;
+        margin-right: -5px;
     }
 
     .Header-res {
@@ -138,7 +159,7 @@
         width: 100%;
         height: auto;
         top: 56px;
-        padding: 1rem 2rem;
+        padding: 1rem 0.3rem;
         right: 0px;
         
     }
@@ -146,17 +167,18 @@
     .Header-res ul .Res-li {
         
         margin: 6px;
-        text-align: center;
-        border-radius: 2px;
-        border: 1px solid rgba(0, 0, 0, 0.527);
-        padding: 6px;
+        text-align: left;
+        border-radius: 5px;
+        border: 1px solid rgba(190, 190, 190, 0.397);
+        padding: 10px ;
         
     }
 
     .Header-res ul li a {
-        color: #454046;
+        font-weight: bold;
+        color: #454056;
         font-family: 'Noto Sans', sans-serif;
-        font-size: 24px;
+        font-size: 16px;
     }
 
 

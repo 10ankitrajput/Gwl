@@ -39,7 +39,7 @@ let myfunc = () =>{
   return (
     <div className="Head-div" id="nav">
       <div className="Header">
-        <div className="logo"><h2>Gwalior</h2></div>
+        <div className="logo"><h2>Happy</h2></div>
         <ul >
           <li>
             <a href="/" className="item1">
@@ -73,8 +73,8 @@ let myfunc = () =>{
           </li>
         </ul>
         <div className="User">
-          <a href="/"><i class="fa-solid fa-user"></i>&nbsp;Sign in</a>
-          <a href="/"><i class="fa-solid fa-user-plus"></i>&nbsp;Sign up</a>
+          <a href="/" className="SignIn"><i class="fa-solid fa-user"></i>&nbsp;Sign in</a>
+          <a href="/" className="SignUp"><i class="fa-solid fa-user-plus"></i>&nbsp;Sign up</a>
 
         </div>
       </div>
