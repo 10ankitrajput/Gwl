@@ -1,12 +1,15 @@
 @import"https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap";
 
+  @import url('https://fonts.googleapis.com/css2?family=Foldit&family=Sigmar&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    
+    /* background-image: url(../images/background.png); */
 }
 
 .Head-div {
@@ -23,7 +26,10 @@
 
 .Head-div .Header div h2 {
     font-size: 30px;
-    color: #fd5631;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Foldit', cursive;
+    font-family: 'Sigmar', cursive;
 }
 
 .Header {
@@ -31,6 +37,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
 }
 
 .Header ul {
@@ -54,7 +61,7 @@
 .Header ul li a:hover {
 
     font-size: 15px;
-    color: #fd7e14;
+    color: #ffffff;
     /* box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 0px 2px, rgba(214, 97, 223, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
 }
 
@@ -107,6 +114,27 @@
 .Header .User .SignUp i{
     color: white;
 }
+
+
+
+
+.Head-div{
+    margin: 2px 0px;
+  color: #fff;
+  background: linear-gradient(
+      90deg,
+      rgba(252, 176, 69, 1) 0%,
+      rgba(253, 29, 29, 0.6) 25%,
+      rgba(131, 58, 180, 1) 50%,
+      rgb(197, 160, 222) 100%
+      
+    ), radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 28%);
+  
+  background-origin: padding-box, content-box;
+  background-repeat: no-repeat;
+}
+
+
 
 
 @media screen and (max-width: 1400px) {
