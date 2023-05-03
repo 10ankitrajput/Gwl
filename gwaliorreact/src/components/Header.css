@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Poppins:wght@300&display=swap');
 
 * {
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-
+    
 }
 
 .Head-div {
@@ -32,8 +31,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-
-
 }
 
 .Header ul {
@@ -116,6 +113,8 @@
 
 @media screen and (max-width:1000px) {
 
+
+    
 
     .Header ul li a {
         display: none;
