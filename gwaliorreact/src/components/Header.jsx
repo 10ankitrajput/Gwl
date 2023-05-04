@@ -41,32 +41,52 @@ let myfunc = () =>{
       <div className="Header">
         <div className="logo"><h2>Gwalior</h2></div>
         <ul >
-          <li>
+          <li className="dropdown">
             <a href="/" className="item1">
               Home
             </a>
           </li>
-          <li>
+          <li  className="dropdown">
             <a href="/" className="item2">
-              About
+              About <i class="fa fa-caret-down"></i>
             </a>
+            <ul className="dropdown-content">
+              <li><a href="/">link 1</a></li>
+              <li><a href="/">link 2</a></li>
+              <li><a href="/">link 3</a></li>
+            </ul>
           </li>
 
-          <li>
+          <li className="dropdown">
             <a href="/" className="item4">
-              Project
+              Project <i class="fa fa-caret-down"></i>
             </a>
+            <ul className="dropdown-content">
+              <li><a href="/">Ongoing Project</a></li>
+              <li><a href="/">Upcoming Project</a></li>
+              <li><a href="/">Previous Project</a></li>
+            </ul>
           </li>
 
-          <li>
+          <li className="dropdown">
             <a href="/" className="item4">
-              Transport
+              Transport <i class="fa fa-caret-down"></i>
             </a>
+            <ul className="dropdown-content">
+              <li><a href="/">Railway</a></li>
+              <li><a href="/">Airport</a></li>
+              <li><a href="/">Local Transport</a></li>
+            </ul>
           </li>
-          <li>
+          <li className="dropdown">
             <a href="/" className="item3">
-              ContactUs
+              Other <i class="fa fa-caret-down"></i>
             </a>
+            <ul className="dropdown-content">
+              <li><a href="/">link 1</a></li>
+              <li><a href="/">link 2</a></li>
+              <li><a href="/">link 3</a></li>
+            </ul>
           </li>
           <li>
           <a href="javascript:void(0)" className="icon" onClick={myfunc}><i class={Icon}></i></a>
