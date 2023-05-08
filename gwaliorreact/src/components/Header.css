@@ -23,11 +23,12 @@
     position: fixed;
     margin: 2px 0px;
     color: #fff;
-    background: linear-gradient(90deg,
+    /* background: linear-gradient(90deg,
             rgba(252, 176, 69, 1) 0%,
             rgba(253, 29, 29, 0.6) 25%,
             rgba(131, 58, 180, 1) 50%,
-            rgb(197, 160, 222) 100%), radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 28%);
+            rgb(197, 160, 222) 100%), radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 28%); */
+    
 
     background-origin: padding-box, content-box;
     background-repeat: no-repeat;
@@ -43,7 +44,7 @@
 
 .Head-div .Header div h2 {
     font-size: 30px;
-    color: #ffffff;
+    color: #fd5631;
     cursor: pointer;
     font-family: 'Foldit', cursive;
     font-family: 'Sigmar', cursive;
@@ -78,11 +79,7 @@
 }
 
 
-.Head-div .Header ul li a:hover {
 
-    font-size: 15px;
-    color: #ffffff;
-}
 
 
 .Head-div .Header ul .dropdown .dropdown-content{
@@ -103,6 +100,7 @@
     display: block;
     text-align: left;
     padding: 9px;
+    
     
 }
 
@@ -205,6 +203,10 @@
 @media screen and (max-width:1000px) {
 
 
+    .Head-div .Header ul .item1{
+        border-right: none;
+    }
+
 
 
     .Head-div .Header ul li a {
@@ -215,6 +217,7 @@
 
         display: block;
         font-size: 35px;
+        color: gray;
     }
 
     .Head-div .Header .User {
@@ -289,10 +292,30 @@
 
     }
 
+
+
+    .Head-div .Header-res ul li .dropdown-content{
+        display: none
+    }
+
+    .Head-div .Header-res ul li:hover .dropdown-content{
+        display: inline;
+    }
+
+    .Head-div .Header-res ul li:hover .dropdown-content li{
+        margin-top: 10px;
+        box-shadow: -3px 0px 3px rgb(199, 199, 199);
+        padding: 10px;
+    }
+
+    .Head-div .Header-res ul li:hover .dropdown-content-off{
+        display: none;
+    }
+
 }
 
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:920px) {
     .Head-div .Header ul li a.icon {
         margin-right: 15px;
     }
@@ -305,9 +328,37 @@
     }
 }
 
-@media screen and (max-width:769px) {
+@media screen and (max-width:799px) {
+
     .Head-div .Header .User {
+        width: 20%;
+    }
+
+    .Head-div .Header .User .SignUp{
         display: none;
     }
+    
+    .Head-div .Header .User .SignIn{
+        background-color: #fd5631;
+        color: white;
+        margin: 10px 8px;
+        margin-right: -50px;
+        padding: 10px 8px;
+        border-radius: 20px;
+    }
+    
+    .Head-div .Header .User .SignIn i {
+        color: white;
+    }
+
+    
+    
+}
+
+@media screen and (max-width:620px) {
+    .Head-div .Header .User{
+        display: none;
+    }
+    
 }
 

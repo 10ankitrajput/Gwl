@@ -11,6 +11,7 @@ function Header() {
   const [Li,setLi] = useState("display-hide")
   const [Icon,setIcon] = useState("fa-sharp fa-solid fa-bars")
   const [Social,setSocial] = useState("display-hide");
+  const [Res,setRes] = useState("dropdown-content")
   
   
 let myfunc = () =>{
@@ -33,6 +34,8 @@ let myfunc = () =>{
       
       
     }
+
+
 
 }
 
@@ -109,25 +112,51 @@ let myfunc = () =>{
             <a href="/" className="item2">
               About
             </a>
+            <ul className={Res}>
+              <li><a href="/">Influencer</a></li>
+              <li><a href="/">Social Media</a></li>
+              <li><a href="/">Advertisement</a></li>
+            </ul>
           </li>
 
           <li className="Res-li">
-            <a href="/" className="item4">
+            <a href="/" className="item3">
               Project
             </a>
+            <ul className="dropdown-content">
+              <li><a href="/">Ongoing Project</a></li>
+              <li><a href="/">Upcoming Project</a></li>
+              <li><a href="/">Previous Project</a></li>
+            </ul>
           </li>
 
           <li className="Res-li">
             <a href="/" className="item4">
               Transport
             </a>
+            <ul className="dropdown-content">
+              <li><a href="/">Railway</a></li>
+              <li><a href="/">Airport</a></li>
+              <li><a href="/">Local Transport</a></li>
+            </ul>
           </li>
           <li className="Res-li">
-            <a href="/" className="item3">
-              ContactUs
+            <a href="/" className="item5">
+              Other
+            </a>
+            <ul className="dropdown-content">
+              <li><a href="/">Traffic Services</a></li>
+              <li><a href="/">Our Partner</a></li>
+              <li><a href="/">Contact Us</a></li>
+            </ul>
+          </li>
+          <li className="Res-li">
+            <a href="/" className="item6">
+              Sign Up
             </a>
           </li>
           </ul>
+          
           <ul className={Social}>
             <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>   
             <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
