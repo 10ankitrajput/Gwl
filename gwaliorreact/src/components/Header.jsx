@@ -41,8 +41,8 @@ let myfunc = () =>{
       <div className="Header">
         <div className="logo"><h2>Gwalior</h2></div>
         <ul >
-          <li className="dropdown">
-            <a href="/" className="item1">
+          <li className="dropdown item1">
+            <a href="/" className="">
               Home
             </a>
           </li>
@@ -51,9 +51,9 @@ let myfunc = () =>{
               About <i class="fa fa-caret-down"></i>
             </a>
             <ul className="dropdown-content">
-              <li><a href="/">link 1</a></li>
-              <li><a href="/">link 2</a></li>
-              <li><a href="/">link 3</a></li>
+              <li><a href="/">Influencer</a></li>
+              <li><a href="/">Social Media</a></li>
+              <li><a href="/">Advertisement</a></li>
             </ul>
           </li>
 
@@ -83,9 +83,9 @@ let myfunc = () =>{
               Other <i class="fa fa-caret-down"></i>
             </a>
             <ul className="dropdown-content">
-              <li><a href="/">link 1</a></li>
-              <li><a href="/">link 2</a></li>
-              <li><a href="/">link 3</a></li>
+              <li><a href="/">Traffic Services</a></li>
+              <li><a href="/">Our Partner</a></li>
+              <li><a href="/">Contact Us</a></li>
             </ul>
           </li>
           <li>

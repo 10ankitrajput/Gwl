@@ -63,6 +63,12 @@
     padding: 21px 16px;
 }
 
+
+.Head-div .Header ul .item1{
+    
+    border-right: 1px solid #454046;
+}
+
 .Head-div .Header ul li a {
     font-size: 15px;
     color: #454046;
@@ -84,7 +90,7 @@
     position: absolute;
     background-color: #fff;
     z-index: 1;
-    margin: 20px -5px;
+    margin: 22px -5px;
     width: auto;
     border-radius: 10px;
     height: auto;
